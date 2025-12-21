@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+}
+body{
+    background-color: #1a1a1a;
+ 
+}
+
+nav{
+    background-color: black;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.NavList{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.LogoList{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.NameC{
+    font-size: 20px;
+    font-weight:bolder;
+}
+.bottom{
+    background-color: black;
+    position: absolute;
+    bottom:0;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    color:white
+
+}
+#myProgressBar{
+    width: 50vw;
+}
+.players{
+    margin:10px;
+    font-size: 25px;
+}
+.main{
+    min-height: calc(100vh - 70px - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 70vw;
+    height: 60vh;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    position: relative;
+}
+.brandImg{
+    display: flex;
+    border-radius: 12px ;
+    position: absolute;
+    right:0%;
+    top: 0%;
+    height: 100%;
+
+}
+.brandImg img{
+    border-radius: 12px;
+    width: 350px
+}
+
+.container h1{
+    padding: 20px;
+    font-size: larger;
+}
+.SongItem{
+    background-color: antiquewhite;
+    border-radius: 12px;
+    color:black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    width: 80%;
+    margin: 1px;
+
+    
+}
+.SongItem img{
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+}
+.SongsContainer{
+    position: absolute;
+    left: 0;
+    top: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 40%;
+    padding: 10px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.players i{
+    cursor: pointer;
+}
+
+
+
+/* mobile */
+@media(max-width: 600px){
+  .container{
+    width: 90vw;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .brandImg{
+    display: none;
+  }
+  .SongsContainer{
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  .SongItem{
+    width: 100%;
+    height: auto;
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+  .SongItem img{
+    width: 30px;
+    height: 30px;
+  }
+  #myProgressBar{
+    width: 80vw;
+  }
+  .players{
+    font-size: 20px;
+  }
+  nav{
+    height: auto;
+    padding: 10px 0;
+  }
+  .NavList{
+    gap: 12px;
+    font-size: 14px;
+  }
+} 
+
+/* Tablets */
+@media(max-width: 900px){
+  .container{
+    width: 85vw;
+    height: auto;
+  }
+  .brandImg img{
+    width: 250px;
+  }
+  .SongsContainer{
+    width: 55%;
+  }
+  .SongItem{
+    width: 95%;
+    height: auto;
+  }
+  #myProgressBar{
+    width: 65vw;
+  }
+}
+
+
+

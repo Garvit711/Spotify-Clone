@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone...!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+       <ul class = "NavList" >
+        <li class = "LogoList">
+            <img id = "logo" src="Spotify_icon.svg.png" alt="Spotify Logo" >
+            <span class="NameC">Spotify</span></li>
+        <li>Home</li>
+        <li>About</li>
+       </ul>
+    </nav>
+   <main class="main">
+   <div class="container">
+    <h1>Best Of NCS - No Copyright Songs</h1>
+    <div class="brandImg"> <img src="maincover.png.jpg" alt="Main Cover"></div>
+    <div class="SongsContainer">
+        <div class="SongItem">
+            <img src="Covers/Cover1.jpg" alt="AlanWalker">
+            <span class="songname">Faded - AlanWalker</span>
+            <span class="songplay"><span class="timestamp">03:32 <i id="1" class="fa-solid songitemplay fa-play"></i></span></span>
+        </div>
+           <div class="SongItem">
+            <img src="Covers/Cover1.jpg" alt="AlanWalker">
+            <span class="songname">Faded - AlanWalker</span>
+            <span class="songplay"><span class="timestamp">03:28 <i id="2" class="fa-solid songitemplay fa-play"></i></span></span>
+        </div>
+           <div class="SongItem">
+            <img src="Covers/Cover1.jpg" alt="AlanWalker">
+            <span class="songname">Faded - AlanWalker</span>
+            <span class="songplay"><span class="timestamp">03:14 <i id="3" class="fa-solid songitemplay fa-play"></i></span></span>
+        </div>
+           <div class="SongItem">
+            <img src="Covers/Cover1.jpg" alt="AlanWalker">
+            <span class="songname">Faded - AlanWalker</span>
+            <span class="songplay"><span class="timestamp">03:28<i id="4" class="fa-solid songitemplay fa-play"></i></span></span>
+        </div>
+           <div class="SongItem">
+            <img src="Covers/Cover1.jpg" alt="AlanWalker">
+            <span class="songname">Faded - AlanWalker</span>
+            <span class="songplay"><span class="timestamp">02:18<i id="5" class="fa-solid songitemplay fa-play"></i></span></span>
+        </div>
+    </div>
+  </div>
+</main>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value = "0" max="100">
+        <div class="players">
+        <i class="fa-solid fa-backward" id = "previous"></i>
+        <i class="fa-solid fa-play" id="master"></i>
+        <i class="fa-solid fa-forward" id = "forward"></i>
+        </div>
+    </div>
+
+</body>
+<script src="https://kit.fontawesome.com/ebc7082e19.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</html>
